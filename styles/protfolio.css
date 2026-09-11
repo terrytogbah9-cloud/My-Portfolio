@@ -1,0 +1,269 @@
+/* Global Reset & Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+#home {
+    height: 35dvh;
+    background-image: url(../media/images/photos/My-babe-medium.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: 400;
+}
+
+.overlay {
+    inset: 0;
+    background: linear-gradient(to bottom,
+    rgba(0,0,0,0.55)
+    rgba(0,0,0,0.75));
+    z-index: 1;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0.1);
+    transition: background-color 0.3s;
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #007BFF;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background: rgba(225,225,225,0.2);
+}
+nav ul li a i {
+    margin-right: 5px;
+}
+
+#dark-mode-toggle {
+    background: rgba(225,225,225,0.2);
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+#dark-mode-toggle:hover {
+    background: rgba(225,225,225,0.4);
+}
+
+/* Section */
+.section {
+    margin: 40px 0;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+.section:last-of-type {
+    border-bottom: none;
+}
+.section h2 {
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+/* About */
+.Profile-img {
+    border-radius: 50%;
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    object-fit: cover;
+    shape-outside: circle(50%);
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #007BFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+.project-card h3 {
+    margin-top: 0;
+}
+.project-card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.project-card .btn:hover {
+    background: #0056b3;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+#contact-form label {
+    font-weight: 600;
+}
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+#contact-form button {
+    padding: 12px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#contact-form button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0 10px;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    color: #777;
+}
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+.dark-mode .container {
+    background: #333;
+}
+.dark-mode #header {
+    background: #1a1a1a;
+}
+.dark-mode .section h2 {
+    color: #ffd700;
+}
+.dark-mode .project-card {
+    background: #444;
+    border-left-color: #ffd700;
+}
+.dark-mode .project-card .btn {
+    background: #ffd700;
+    color: #222;
+}
+.dark-mode .project-card .btn:hover {
+    background: #e6c200;
+}
+.dark-mode #contact-form input,
+.dark-mode #contact-form textarea {
+    background: #555;
+    color: #eee;
+    border-color: #777;
+}
+.dark-mode #contact-form button {
+    background: #ffd700;
+    color: #222;
+}
+.dark-mode #contact-form button:hover {
+    background: #e6c200;
+}
+.dark-mode footer {
+  border-top-color: #555;
+}
+.dark-mode footer a {
+    color: #ffd700;
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #dark-mode-toggle {
+        align-self: center;
+    }
+    .Profile-img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+

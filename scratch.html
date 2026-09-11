@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scratch HTML</title>
+    <link rel="stylesheet" href="styles/scratch.css" />
+    <!-- Including Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Applying Favicon (Icon/Logo in Browser Tab) -->
+    <!-- 16x16, 32x32 and 48x48 -->
+    <!-- SVG is recommended for modern systems -->
+    <link
+      rel="shortcut icon"
+      href="media/images/photos/My-junior-boy.jpeg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header id="top">
+      <nav>
+        <ul>
+          <li>
+            <a href="https://google.com" target="-blank"
+              >Google (opens new tab)</a
+            >
+          </li>
+          <li><a href="Semantic.html">Semantics HTML(relative)</a></li>
+          <li><a href="#top">🔝</a></li>
+          <li><a href="mailto:terrytogbah9@gmail.com">Email me😊</a></li>
+          <li><a href="tel:+233557477141">Call me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2>Unordered, Ordered, and Description Lists</h2>
+        <h3>Unordered List</h3>
+        <ul>
+          <li>Apples</li>
+          <li>Oranges</li>
+          <li>Bananas</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol start="10">
+          <li>10</li>
+          <li>11</li>
+          <li>12</li>
+        </ol>
+
+        <h3>Description List</h3>
+        <dl>
+          <dt>HTML</dt>
+          <dd>HyperText Markup Language</dd>
+          <dt>CSS</dt>
+          <dd>Cascading Style Sheets</dd>
+        </dl>
+      </div>
+
+      <div class="container">
+        <h2>Images and Icons</h2>
+        <h3>The 'img' tag</h3>
+        <img
+          src="media/images/photos/My-junior-boy.jpeg"
+          alt="My-junior-boy"
+          id="My-junior-boy"
+        />
+        <br />
+        <h3>Responsive Images with 'srcset' and 'sizes'</h3>
+
+        <h4>'srcset' only</h4>
+        <img
+          src="media/images/photos/Super-star-small.jpg"
+          alt="Super-star profile"
+          srcset="media/images/photos/Milky-tea-large.jpg 2x
+             media/images/photos/My-babe-medium.jpeg 1.5
+             media/images/photos/Super-star-small.jpeg 1x"
+        />
+
+        <h4>'srcset' and 'sizes' with Description</h4>
+        <img
+          src="media/images/photos/My-babe-medium.jpg"
+          alt="My-babe profile"
+          srcset="
+            media/images/photos/Super-star-small.jpeg  400w,
+            media/images/photos/My-babe-medium.jpeg    800w,
+            media/images/photos/My-babe-medium.jpeg   1200w
+          "
+          sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 800px"
+        />
+
+        <br />
+        <h3>'picture' Element and Art Direction</h3>
+        <picture>
+          <source
+            media="(min-width: 800px)"
+            srcset="media/images/photos/My-babe-medium.jpg"
+          />
+          <source
+            media="(min-width: 400px)"
+            srcset="media/images/photos/Milky-tea-large.jpg"
+          />
+          <img
+            src="media/images/photos/Super-star-small.jpg"
+            alt="Super-star profile"
+          />
+        </picture>
+
+        <br />
+        <h3>figure and figcaption</h3>
+        <figure>
+          <img
+            src="media/images/photos/My-junior-boy.jpeg"
+            alt="My-junior-boy"
+          />
+          <figcaption>My My-junior-boy</figcaption>
+          <figure>
+            <img
+              src="media/images/photos/My-babe-medium.jpg"
+              alt="My-babe"
+              id="My-babe"
+            />
+          </figure>
+        </figure>
+
+        <hr />
+        <h3>Working with Icon files</h3>
+        <!-- Basic approach  -->
+        <!-- Icon sizes are usually 24 by 24 or 32 by32 pixels -->
+        <img
+          src="media/images/icons/gold-medal.webp"
+          alt="gold-medal"
+          width="24"
+          height="24"
+        />
+
+        <!-- With CSS class for sizing -->
+        <img
+          src="media/images/icons/gold-medal.webp"
+          alt="gold-medal"
+          class="Icon"
+        />
+
+        <hr />
+        <h3>Working With Icon Libraries (Font Awesome)</h3>
+        <i class="fab fa-discord"></i>
+        <i class="fab fa-twitter"></i> <span>twitter</span>
+
+        <h4>Example with a link</h4>
+        <a href="htts://discord.com" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-gold-medal"></i>
+          <span>gold-medal</span>
+        </a>
+      </div>
+
+      <div class="flexbox-grid-lesson">
+        <h2>Advanced layout - Flexbox and CSS Grid</h2>
+        <h3>Flexbox</h3>
+        <!-- .Flex-container>.item{$}*3 -->
+        <div class="Flex-container">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+        </div>
+
+        <h3>CSS Grid</h3>
+        <!-- .grid-container>.grid-item{$}*6 -->
+        <div class="grid-container">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+        </div>
+        <div class="container">
+          <h2>Forms and Input controls</h2>
+          <!-- Action is set to '#' as no server is configured yet -->
+          <form action="#" method="post">
+            <!-- common Inputs -->
+            <h3>Text, Email, Password, Number, Tel, URL Inputs</h3>
+            <!-- All inputs require a label -->
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="terrytogbah@gmail.com"
+              required
+            />
+            <!-- password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <!-- Age -->
+            <label for="age">Age:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="100"
+              required
+            />
+            <!-- Telephone -->
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="+233557477141"
+              required
+            />
+            <!-- Website -->
+            <label for="website">Website:</label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              placeholder="https://joedroid.com"
+            />
+            <hr />
+            <h3>checkboxes, Radio Buttons, and Select Dropdowns</h3>
+            <!-- checkboxes: allows multiple selections -->
+            <fieldset>
+              <legend>Interests</legend>
+              <label
+                ><input
+                  type="checkbox"
+                  name="interests"
+                  value="coding"
+                />Coding</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="interests"
+                  value="design"
+                />Design</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="interests"
+                  value="music"
+                />Music</label
+              >
+            </fieldset>
+
+            <!-- Radio Buttons: only one selection -->
+            <h4>Radio Buttons</h4>
+            <fieldset>
+              <legend>Gender</legend>
+              <label
+                ><input type="radio" name="gender" value="male" checked />
+                Male</label
+              >
+              <label
+                ><input type="radio" name="gender" value="female" />
+                Female</label
+              >
+              <label
+                ><input type="radio" name="gender" value="other" /> Other</label
+              >
+            </fieldset>
+
+            <!-- Select Dropdown -->
+            <h4>Select Dropdown</h4>
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+              <option value="">Select your country</option>
+              <option value="us" disabled>United States</option>
+              <option value="lib">Liberia</option>
+              <option value="gh">Ghana</option>
+            </select>
+
+            <!-- Textarea: multiple lines of text -->
+            <h4>Textarea and buttons</h4>
+            <h5>Textarea</h5>
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              cols="30"
+              placeholder="Enter your message here"
+            ></textarea>
+            <h5>
+              Buttons: <code>&lt;button&gt;</code> or
+              <code>&lt;input type="submit"&gt;</code>
+            </h5>
+            <button type="submit">Send Message</button>
+            <button type="reset">Clear</button>
+            <button type="button" onclick="alert('Hi there!')">Click Me</button>
+
+            <h4>The Datalist for suggestions</h4>
+            <label for="browser">Browser:</label>
+            <input list="browsers" id="browser" name="browser" />
+            <datalist id="browsers">
+              <option value="Chrome"></option>
+              <option value="Firefox"></option>
+              <option value="Safari"></option>
+              <option value="Edge"></option>
+            </datalist>
+          </form>
+        </div>
+        <div class="container">
+          <h2>Tables - Displaying Tabular Data</h2>
+          <h3>Table Structure - 'table', 'tr', 'td', 'th'</h3>
+          <!-- A Standard table -->
+          <table>
+            <tr>
+              <th>Name</th>
+              <!---- header cell ---  -->
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Terry</td>
+              <!-- --- data cell --- -->
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>30</td>
+            </tr>
+          </table>
+
+          <hr />
+          <h3>Table Headers, Footers, Captions</h3>
+          <table>
+            <caption>
+              Employee List
+            </caption>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Salary</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Terry</td>
+                <td>HR</td>
+                <td>60000</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>IT</td>
+                <td>50000</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td colspan="2">Total Employees</td>
+                <td>2</td>
+              </tr>
+            </tfoot>
+          </table>
+
+          <hr />
+          <h3>Spanning Columns and Rows - 'colspan' and 'rowspan'</h3>
+          <table>
+            <div class="table-wrapper">
+              <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+              </tr>
+              <tr>
+                <td rowspan="2">Name</td>
+                <td>Terry</td>
+              </tr>
+
+              <tr>
+                <td>Bob</td>
+              </tr>
+              <tr>
+                <td colspan="2">Both employees</td>
+              </tr>
+            </div>
+          </table>
+        </div>
+
+        <hr />
+        <div class="container">
+          <h2>Multimedia- Audio and Video</h2>
+          <h3>
+            The <code>&lt;video&gt;</code> Element - Attributes and formats
+          </h3>
+          <!-- controls - shows play/pause, and volume, etc. -->
+          <!-- autoplay - starts playing automatically (often blocked by browsers) -->
+          <!-- loop - repeats the audio when it ends -->
+          <!-- muted - starts the audio muted -->
+          <!-- download- allows users to download the audio -->
+          <div class="media-wrapper">
+            <audio controls download>
+              <source src="media/Audio/BrotherHood .mp3" type="audio/mpeg" />
+              <source src="media/audio/sample.ogg" type="audio/ogg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <h3>
+            The <code>&lt;video&gt;</code> Element - Attributes, poster, and
+            formats
+          </h3>
+          <!-- poster - specifies an image to display while the video is downloading or until the user hits the play button -->
+          <!-- width/height - sets the dimensions of the video player -->
+          <div class="media-wrapper">
+            <video
+              controls
+              width="640"
+              height="360"
+              poster="media/images/photos/video-poster.jpg"
+            >
+              <source
+                src="media/Video/Snapchat-174970034.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="media/Video/Snapchat-174970034.mp4"
+                type="video/webm"
+              />
+              <track
+                label="English"
+                kind="captions"
+                srclang="en"
+                src="media/videos/resources/sample-en.vtt"
+                default
+              />
+              <track
+                label="Espanol"
+                kind="captions"
+                srclang="es"
+                src="media/Video/resources/sample-en.vtt"
+              />
+              Your browser does not support the video element.
+            </video>
+
+            <video
+              controls
+              width="640"
+              height="360"
+              poster="media/images/photos/video-poster.jpg"
+            >
+              <source
+                src="media/Video/Snapchat-114118299.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="media/Video/Snapchat-174970034.mp4"
+                type="video/webm"
+              />
+              <track
+                label="English"
+                kind="captions"
+                srclang="en"
+                src="media/videos/resources/sample-en.vtt"
+                default
+              />
+              <track
+                label="Espanol"
+                kind="captions"
+                srclang="es"
+                src="media/Video/resources/sample-en.vtt"
+              />
+              Your browser does not support the video element.
+            </video>
+          </div>
+
+          <h3>Embedding YouTube Videos and Other External Content</h3>
+          <div class="media-wrapper">
+            <!-- use <iframe> to embed YouTube videos -->
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/YHRvDo8rUoQ?si=KYhFVJy7XIjIdETz"
+                title="YouTube video player"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Internal, Inline, and External JavaScript</h2>
+        <h3>Inline</h3>
+        <button onclick="alert('Hello from inline JavaScript!')">
+          Click Me
+        </button>
+
+        <h3>Internal</h3>
+        <p>
+          We use the <code>&lt;script&gt;</code> tags to write JavaScript code .
+        </p>
+        <script>
+          alert("Hello from the internal JavaScript!");
+        </script>
+
+        <h3>External</h3>
+        <p>
+          We use the <code>&lt;script&gt;</code> tag's 'src' attribute to point
+          to the JavaScript file.
+        </p>
+
+        <!-- -- DOM Manipulation -- -->
+        <div class="js-body">
+          <!-- -- Selecting Elements -- -->
+          <h4 id="header">JS Header with ID 'header'</h4>
+          <ul>
+            <caption>
+              List items for JS Collection
+            </caption>
+            <!-- -- li.item{Item $}*4 -->
+            <li class="item">Item 1</li>
+            <li class="item">Item 2</li>
+            <li class="item">Item 3</li>
+            <li class="item">Item 4</li>
+          </ul>
+        </div>
+
+        <!-- -- Changing content and styles: -- -->
+        <div class="js-changing-contents">
+          <h1>Will Be Changed By JS</h1>
+        </div>
+
+        <!-- Event -->
+        <div class="js-events">
+          <button class="myButton">Click Me</button>
+          <button class="box">Hover Over Me</button>
+        </div>
+
+        <!-- Form Validation -->
+        <div class="js-form-validation">
+          <form id="contact-form">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Put in your Name"
+              required
+            />
+
+            <label for="mail">Mail:</label>
+            <input
+              type="email"
+              name="mail"
+              placeholder="Put in your mail"
+              id="mail"
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <!-- Dark Mode Toggle with javascript -->
+        <div class="js-dark-mode">
+          <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        </div>
+
+        <script src="scripts/script.js"></script>
+      </div>
+    </main>
+  </body>
+</html>

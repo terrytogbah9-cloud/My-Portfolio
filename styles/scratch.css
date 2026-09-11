@@ -1,0 +1,208 @@
+* {   box-sizing: border-box;}
+nav ul {
+    list-style: none; padding: 10px; display: flex; gap: 20px;
+}
+
+nav ul li {
+    background-color: rgb(156, 152, 159);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: #111110;
+    font-size: 1.2rem;
+}
+
+a:hover {text-decoration: underline;}
+.container ul, ol {padding-left: 20px;}
+.container ul {list-style-type: square;}
+.container ol {list-style-type: upper-roman;}
+
+#My-junior-boy {
+    width: 200px;
+    height: 200px;
+    object-fit: fill;/* change to your linking */
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#Milky-tea-large {
+    width: 200px;
+    height: 200px;
+    object-fit: fill;/* change to your linking */
+    display:block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#My-babe {
+    width: 300px;
+    height: 400px;
+    display: block;
+    object-fit:cover;
+    margin: 0 auto;
+    border-radius: 20%;
+}
+
+.Icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+/* Advanced Layout Flexbox and CSS Grid */
+/* Flexbox is a one-dimensional layout system.
+You define a flex container with 'display: flex; and its children become flex items.' */
+.Flex-container {
+    display: flex;
+    flex-direction: row;/* default: row; also column, row reverse, column-reverse */
+   justify-content: center; /* align along main axis: flex-start, center, flex-end, space-between, space-around */
+  align-items: center; /* align along cross axis: str etch, flex-start, center, flex-end */
+  gap: 20px;/* space between items */
+  height: 200px;
+  background: #eee;
+}
+
+.item {
+     background: #007bff;
+     color: white;
+     padding: 20px;
+}
+
+/* Grid Basics - Rows, Columns, and Gap */
+.grid-container {
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr; /* three equal column */
+  grid-template-rows: auto auto; /* two rows, height determined by content */
+   gap: 20px;
+}
+.grid-item {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Form and Input elements */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+label {
+    font-weight: bold;
+}
+input, textarea, select {
+    padding: 8px;
+    border: 1px solid #121010;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #d4d3d3;
+    color: #000000;
+}
+button[type="submit"] {
+    background: #1f4368;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background: #0056b3;
+}
+button[type="button"] {
+    background: #274763;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type="button"]:hover {
+    background:#0056b3;
+}
+button[type="reset"] {
+    background: #274763;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type="reset"]:hover {
+    background: #ec3939;
+}
+
+/* Styling Tables - Borders, stripes, and Responsive Tables */
+table {
+    width: 100%;
+   border-collapse: collapse; /* removes double borders */
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #45494e;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f9f5f5; /* zebra stripes */
+}
+/* Responsive: horizontal scroll on small screens */
+.table-wrapper {
+  overflow-x: auto; /* horizontal scrolling on smaller devices */
+}
+
+/* Multimedia - Audio and Video */
+/* container to keep things centered and tidy */
+.media-wrapper {
+    max-width: 700%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+/* Make audio stretch full width*/
+audio {
+    width: 100%;
+}
+/* Make video responsive (fit its container) */
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #0000;/* black background while loading */
+    border-radius: 6px;
+}
+/* Make YouTube iframe responsive */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 19;/* maintain 16:9 aspect ratio */
+}
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;/* remove the old frameborder */
+}
+
+
+/* ------ JS Dark Mode Styles */
+.dark-mode {
+    background: #222;
+    color: #f4f4f4;
+}
+.dark-mode .container {
+    background: #333;
+    color: #f4f4f4;
+}
+/* --- other overrides ---- */

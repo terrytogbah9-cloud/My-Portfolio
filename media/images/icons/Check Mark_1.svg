@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="50px" height="50px" baseProfile="basic">
+  <linearGradient id="jrdie3LmJ3jWsUqXwljwga" x1="32" x2="32" y1="809" y2="754.866" gradientTransform="matrix(1 0 0 -1 0 814)" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#1a6dff" />
+    <stop offset="1" stop-color="#c822ff" />
+  </linearGradient>
+  <path fill="url(#jrdie3LmJ3jWsUqXwljwga)" d="M32,58C17.663,58,6,46.337,6,32S17.663,6,32,6s26,11.663,26,26S46.337,58,32,58z M32,8 C18.767,8,8,18.767,8,32s10.767,24,24,24s24-10.767,24-24S45.233,8,32,8z" />
+  <linearGradient id="jrdie3LmJ3jWsUqXwljwgb" x1="32" x2="32" y1="809" y2="754.866" gradientTransform="matrix(1 0 0 -1 0 814)" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#1a6dff" />
+    <stop offset="1" stop-color="#c822ff" />
+  </linearGradient>
+  <path fill="url(#jrdie3LmJ3jWsUqXwljwgb)" d="M32,52c-11.028,0-20-8.972-20-20s8.972-20,20-20s20,8.972,20,20S43.028,52,32,52z M32,14 c-9.925,0-18,8.075-18,18s8.075,18,18,18s18-8.075,18-18S41.925,14,32,14z" />
+  <linearGradient id="jrdie3LmJ3jWsUqXwljwgc" x1="32" x2="32" y1="25.197" y2="41.004" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#6dc7ff" />
+    <stop offset="1" stop-color="#e6abff" />
+  </linearGradient>
+  <path fill="url(#jrdie3LmJ3jWsUqXwljwgc)" d="M27.832,40.418l-6.279-6.279c-0.391-0.391-0.391-1.024,0-1.414l1.414-1.414 c0.39-0.391,1.024-0.391,1.414,0l4.846,4.845L39.59,25.499c0.385-0.396,1.018-0.405,1.414-0.02l1.434,1.394 c0.396,0.385,0.405,1.018,0.02,1.414l-11.778,12.11C29.902,41.198,28.62,41.206,27.832,40.418z" />
+</svg>

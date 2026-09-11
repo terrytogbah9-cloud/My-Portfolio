@@ -1,0 +1,137 @@
+/* ----------RESET & BASE --------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #b2acac;
+    color: #1d1d30;
+    line-height: 1.6;
+}
+
+/*------ CONTAINER ------*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ------ HEADER ------ */
+#main-header {
+    background: #636465;
+    color: #ecf0f1;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0.1)
+}
+
+.header-inner {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* --------- NAVIGATION -------- */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #a7b5b8;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.nav-link:hover {
+    background: #34495e;
+}
+
+/* -------------- MAIN CONTENT ------------- */
+.main-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.content-area {
+  flex: 3;  /* take 3 part of the space */
+}
+
+.sidebar {
+     flex: 1; /* takes 1 part */
+     background: #fff;
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 0 2px 4px rgba(0,0,0.05)
+}
+
+/* ---------- SECTION ----------- */
+.section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px 0 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0.05)
+}
+ .section-title {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f2;
+    padding-bottom: 8px;
+ }
+ /* -------- ARTICLES ------------- */
+.article {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f9f9fc;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+}
+.article-title {
+    color: #2980b9;
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+.article-excerpt {
+    color: #555;
+}
+/* ----------- FOOTER ---------- */
+#main-footer {
+    background: #575858;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 3px solid #34495e;
+}
+.footer-text {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+/* -------- RESPONSIVE TWEAK --------- */
+@media (max-width: 768px) {
+    .header-inner{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .main-content {flex-direction: column;}   
+    .nav-list {
+        flex-wrap:wrap;
+        gap: 10px;
+    }     
+}

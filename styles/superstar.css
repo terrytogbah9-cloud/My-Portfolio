@@ -1,0 +1,31 @@
+nav ul {
+    display: flex;          /* horizontal layout */
+    list-style: none;
+    padding: 0;
+    gap: 20px;              /* space between items */
+    background: #333;
+    padding: 10px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #b2acac;
+    color: #1d1d30;
+    line-height: 1.6;
+}
+nav ul li {
+   nav ul li {
+    background-color: rgb(156, 152, 159);
+    padding: 5px 10px;
+    border-radius: 3px;
+} /* no extra styling needed */
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+nav ul li a:hover {
+    background: #007BFF;
+    border-radius: 4px;
+}

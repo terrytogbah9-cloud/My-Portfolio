@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Terry Togbah</title>
+    <link rel="stylesheet" href="styles/protfolio.css" />
+    <!-- Including Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header id="header">
+        <div class="picture-img">
+          <img
+            src="media/images/photos/My-babe-medium.jpg"
+            alt="Profile"
+            class="Profile-img"
+          />
+        </div>
+        <h1>My Portfolio</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#home"><i class="fas fa-home"></i>Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="fas fa-user"></i>About</a>
+            </li>
+            <li>
+              <a href="#projects"><i class="fas fa-code"></i>Project</a>
+            </li>
+            <li>
+              <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="dark-mode-toggle"><i class="fas fa-moon"></i> Dark</button>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+          <div class="overlay"></div>
+          <h2>Welcome to my Portfolio</h2>
+          <p>
+            I'm a web developer passionate about creating beautiful and
+            functional websites.
+          </p>
+        </section>
+        <!-- About Section -->
+        <!-- Section#about.section -->
+        <section id="about" class="section">
+          <h2>About Me</h2>
+          <div class="picture-img">
+            <img
+              src="media/images/photos/My-junior-boy.jpeg"
+              alt="Profile"
+              class="Profile-img"
+            />
+          </div>
+          <p>
+            Hi! I'm Terry Togbah. I have been learning web development for the
+            past year. I enjoy building responsive sites and exploring new
+            technologies. When I'm not coding , I love taking rides and
+            photography.
+          </p>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects" class="section">
+          <h2>My Projects</h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <h3>Project 1</h3>
+              <p>
+                Description of Project 1. Build with HTML, CSS, and JavaScript.
+              </p>
+              <a href="#" class="btn">Live Demo</a>
+            </div>
+            <div class="project-card">
+              <h3>Project 2</h3>
+              <p>
+                Description of Project 2. A responsive website app using
+                flexbox.
+              </p>
+              <a href="#" class="btn">Live Demo</a>
+            </div>
+            <div class="project-card">
+              <h3>Project 3</h3>
+              <p>
+                Description of Project 3. A simple portfolio website like this
+                one!.
+              </p>
+              <a href="#" class="btn">Live Demo</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+          <h2>Contact Me</h2>
+          <form id="contact-form">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="terrytogbah@example.com"
+              required
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i>Send Message
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          Find me on social media!
+          <a href="https://github.com/yourusername" target="_blank"
+            ><i class="fab fa-github"></i>Github</a
+          >
+          &bull;
+          <a href="https://linkedin.com/in/yourusername" target="_blank"
+            ><i class="fab fa-linkedin"></i>LinkedIn</a
+          >
+        </p>
+        <p>&copy; 2026 Terry Togbah. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="scripts/portfolio.js"></script>
+  </body>
+</html>
